@@ -1,7 +1,7 @@
 {
   "name": "covered",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://covered-ai.netlify.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
