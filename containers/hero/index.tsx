@@ -10,10 +10,8 @@ const Hero = ({exampleRef}: Props) => {
 
   const executeScroll = (ref: MutableRefObject<HTMLDivElement | null>) => {
     if (!ref?.current) {
-      console.log('no ref');
       return
     }
-    console.log('vibe')
     document.body.style.position = "static"
     document.body.style.overflow = "unset"
     ref.current.scrollIntoView({ behavior: "smooth" })

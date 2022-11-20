@@ -41,7 +41,6 @@ const [loading, setLoading ] = useState<boolean>(false)
     setLoading(false)
   }
 
-  console.log('loading', loading)
   return (
     <div className="relative mt-10">
 <Form handleSubmitForm={handleSubmitForm} loading={loading} />
