@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+      transition: all 300ms ease-out;
+}
