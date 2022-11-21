@@ -6,7 +6,12 @@ If you're looking for a hassle-free way to create a cover letter, look no furthe
 
 ## About
 
-Covered is a personalised AI cover letter generator using OpenAi's GTP-3. The platform allows users to input information that would be relevant to generating a personalised cover letter. The platform then allows users to customise their cover letter
+Covered is a personalised AI cover letter generator using OpenAi's GTP-3. The platform allows users to input information that would be relevant to generating a personalised cover letter. The platform then allows users to customise their cover letter.
+
+The platform uses Google Analytics and is SEO optimised:
+
+<img width="1470" alt="Screenshot 2022-11-21 at 19 34 31" src="https://user-images.githubusercontent.com/87046460/203143265-2f58f7ff-64d4-4836-9e6e-b71bdc8ed5e4.png">
+
 
 [Create your AI generated cover letter here](https://cover-letter-ai.netlify.app/)
 
