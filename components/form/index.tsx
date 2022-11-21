@@ -9,11 +9,17 @@ interface Props {
 }
 
 const Form = ({ handleSubmitForm, loading }: Props) => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+
+
+  const vibe = (data: FormFields) => {
+    handleSubmitForm(data as FormFields)
+    reset()
+  }
 
   return (
     <>
-    <form className="flex flex-col space-y-4 text-black-metal"onSubmit={handleSubmit((data) => handleSubmitForm(data as FormFields))}>
+    <form className="flex flex-col space-y-4 text-black-metal"onSubmit={handleSubmit((data) => vibe(data as FormFields))}>
       <input className="p-2 rounded-md" {...register("fullName")} placeholder="Full name" />
 <div className="flex-col md:flex-row flex space-between w-full">
       <input className="p-2 rounded-md mr-4 mb-4 md:my-0 w-full md:w-4/12" type="number" placeholder="Years of experience" {...register('yearsOfExperience')} />
