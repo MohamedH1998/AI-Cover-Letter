@@ -4,9 +4,15 @@ import { useEffect, useState } from 'react';
 import { ToastContainer } from "react-toastify"
 import { NextSeo } from 'next-seo'
 import Script from 'next/script';
+import ReactGA from "react-ga4";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [showChild, setShowChild] = useState(false);
+
+  const handleAcceptCookie = () => {
+    ReactGA.initialize(process.env.NEXT_PUBLIC_MEASUREMENT_ID as string)
+  }
 
 
   
@@ -71,17 +77,25 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           }
         ]}
       />
-      <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
-      <Script strategy="afterInteractive" id="google-analytics" >
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
-        `}
-        </Script>
-        <CookieNotice/>
+<CookieConsent
+  location="bottom"
+  buttonText="Accept"
+  acceptOnScroll={true}
+  overlay={true}
+  acceptOnOverlayClick={true}
+  enableDeclineButton={true}
+  declineButtonStyle={{ background: '#fff', color: '#000', border: '2px solid #000'}}
+  declineButtonText="Decline"
+  cookieName="covered-cookie"
+  style={{ background: '#fff', color: '#000'}}
+  buttonStyle={{ background: '#000', color: '#fff', border: '2px solid #000'}}
+  expires={150}
+  onAccept={handleAcceptCookie}
+
+
+
+
+>This website uses cookies to enhance the user experience.</CookieConsent>
         <Component {...pageProps} />
         <ToastContainer
         position="top-right"

@@ -68,14 +68,6 @@
   resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
   integrity sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==
 
-"@mirzalikic/react-cookie-notice@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@mirzalikic/react-cookie-notice/-/react-cookie-notice-1.0.4.tgz#b8fe3e334907da2aeb8f2d8216391ad1809446cb"
-  integrity sha512-mfHpGnFu9LVRPtu89fQ7+dPVwWN8PsqR8bB1tUQRhzRUy5MdVYfJ6qX1P/oDRajZu15Ny0rKOZHfxplLmbx0pw==
-  dependencies:
-    js-cookie "^3.0.0"
-    prop-types "^15.8.1"
-
 "@netlify/esbuild-android-64@0.14.39":
   version "0.14.39"
   resolved "https://registry.yarnpkg.com/@netlify/esbuild-android-64/-/esbuild-android-64-0.14.39.tgz#7bd30aba94a92351d2c5e25e178ceb824f3c2f99"
@@ -2040,11 +2032,6 @@ js-cookie@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
   integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
-
-js-cookie@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
-  integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
 
 js-sdsl@^4.1.4:
   version "4.1.5"
