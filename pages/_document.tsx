@@ -10,8 +10,14 @@ export default class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:title"
+            property="og:title"
             content="Free Cover Letter Generator | Covered"
           />
+                    <meta
+            name="name"
+            content="Free Cover Letter Generator | Covered"
+          />
+          
           <meta name="google-site-verification" content="DcOECbkXwZCHzcJF8VX61aS9oiNbspLNsuqLFLwumLE" />
                     <link
             rel="icon"
@@ -21,10 +27,19 @@ export default class MyDocument extends Document {
             name="twitter:description"
             content="If you're looking for a hassle-free way to create a cover letter, look no further than our AI cover letter service! With our easy-to-use online platform, you'll be able to create a personalized cover letter in minutes, without having to worry about formatting or grammar mistakes."
           />
+                    <meta
+            name="description" property="og:description"
+            content="If you're looking for a hassle-free way to create a cover letter, look no further than our AI cover letter service! With our easy-to-use online platform, you'll be able to create a personalized cover letter in minutes, without having to worry about formatting or grammar mistakes."
+          />
           <meta
             name="twitter:image"
             content="https://res.cloudinary.com/dw9t4raq4/image/upload/v1668977051/Covered_cup7vq.png"
           />
+                    <meta
+            name="image" property="og:image"
+            content="https://res.cloudinary.com/dw9t4raq4/image/upload/v1668977051/Covered_cup7vq.png"
+          />
+          <meta name="author" content="Mohamed Hassan"/>
           <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
           <link
             rel="shortcut icon"
