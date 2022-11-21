@@ -22,9 +22,7 @@ const Create: NextPage = () => {
       </div>
       <Image
               src="/images/hand.svg"
-              objectFit="contain"
               alt="hand"
-              layout="responsive"
               width={500}
               height={500}
               className="hidden md:block w-full max-w-[400px]"

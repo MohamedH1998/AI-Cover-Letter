@@ -58,7 +58,7 @@ const [loading, setLoading ] = useState<boolean>(false)
       </div>
       </div>
 )}
-    <Modal showModal={showModal} setShowModal={setShowModal} text={coverLetter}/>
+    <Modal title="Your Cover Letter" showModal={showModal} setShowModal={setShowModal} text={coverLetter}/>
     </div>
   );
 }

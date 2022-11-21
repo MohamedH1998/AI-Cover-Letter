@@ -3,18 +3,11 @@ import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react';
 import { ToastContainer } from "react-toastify"
 import { NextSeo } from 'next-seo'
-import ReactGA from "react-ga4";
+import Script from 'next/script';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [showChild, setShowChild] = useState(false);
 
-
-  useEffect(() => {
-    if(process.env.NEXT_PUBLIC_MEASUREMENT_ID && process.env.NODE_ENV === "production") { // Checks for GA ID and only turns on GA in production
-      ReactGA.initialize(process.env.NEXT_PUBLIC_MEASUREMENT_ID);
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }
-  });
 
   
   useEffect(() => {
@@ -78,6 +71,17 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           }
         ]}
       />
+      <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
+      <Script strategy="afterInteractive" id="google-analytics" >
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
+        `}
+        </Script>
+        <CookieNotice/>
         <Component {...pageProps} />
         <ToastContainer
         position="top-right"

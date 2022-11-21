@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import React, { ReactElement } from 'react'
-import Button from '../button'
 
-const ImageSection = ({title, text, btnContent, btnStyle, src, reverse, exampleRef}: any): ReactElement => {
+
+
+
+
+const ImageSection = ({title, text, btnContent, btnStyle, src, reverse, exampleRef, onClick}: ImageSection): ReactElement => {
   const textBeginning = title.substring(0, title.lastIndexOf(" "));
   const lastWord = title.split(' ').pop()
   return (
@@ -10,13 +13,11 @@ const ImageSection = ({title, text, btnContent, btnStyle, src, reverse, exampleR
       <div className="">
       <h2 className="text-3xl font-secondary text-white md:text-5xl">{textBeginning}<span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-600">{lastWord}</span></h2>
       <p className="text-left w-11/12 max-w-[600px] md:py-4 my-4">{text}</p>
-    <Button className={`${btnStyle} py-2 px-4 md:px-8 md:py-4 my-2 w-content-fit md:text-lg`} content={btnContent}/>
+    <button onClick={onClick} className={`${btnStyle} py-2 px-4 md:px-8 md:py-4 my-2 w-content-fit md:text-lg`}>{btnContent}</button>
     </div>
     <Image
               src={src}
-              objectFit="contain"
               alt={title}
-              layout="responsive"
               width={100}
               height={100}
               className="w-full max-w-[450px]"

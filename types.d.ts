@@ -5,7 +5,8 @@ interface ImageSection {
     btnStyle: string;
     src: string;
     reverse?: boolean;
-    ref?: MutableRefObject<HTMLDivElement | null>
+    exampleRef?: MutableRefObject<HTMLDivElement | null>;
+    onClick?: () => void
 }
 
 

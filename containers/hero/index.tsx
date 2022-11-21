@@ -1,11 +1,12 @@
+import { useRouter } from 'next/router'
 import React, { MutableRefObject } from 'react'
-import Button from '../../components/button'
 
 interface Props {
   exampleRef: MutableRefObject<HTMLDivElement | null>
 }
 
 const Hero = ({exampleRef}: Props) => {
+  const router = useRouter()
 
 
   const executeScroll = (ref: MutableRefObject<HTMLDivElement | null>) => {
@@ -27,7 +28,7 @@ const Hero = ({exampleRef}: Props) => {
     Find the perfect cover letter for your next job
     </p>  
     <div className="">
-    <button className="py-2 mx-2 px-6 my-2 border-2 border-ice-cold-stare md:text-lg bg-ice-cold-stare text-black rounded-sm md:px-8" >Get started</button>
+    <button onClick={() => router.push('/create')} className="py-2 mx-2 px-6 my-2 border-2 border-ice-cold-stare md:text-lg bg-ice-cold-stare text-black rounded-sm md:px-8" >Get started</button>
     <button onClick={() => executeScroll(exampleRef)} className="py-2 mx-2 px-6 my-2 border-2 md:text-lg border-white text-white rounded-sm md:px-8">See example</button>
     </div>
   </main>
