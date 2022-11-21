@@ -1,27 +1,37 @@
-# Next.js + Tailwind CSS Example
+# Covered
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+If you're looking for a hassle-free way to create a cover letter, look no further than our AI cover letter service! With our easy-to-use online platform, you'll be able to create a personalized cover letter in minutes, without having to worry about formatting or grammar mistakes.
 
-## Deploy your own
+![Covered_cup7vq](https://user-images.githubusercontent.com/87046460/203141190-8f2e0831-00b6-4e71-8222-acb8290347a6.png)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## About
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Covered is a personalised AI cover letter generator using OpenAi's GTP-3. The platform allows users to input information that would be relevant to generating a personalised cover letter. The platform then allows users to customise their cover letter
+
+[Create your AI generated cover letter here](https://cover-letter-ai.netlify.app/)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Clone this repo and install the relevant packages
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+git clone https://github.com/MohamedH1998/AI-Cover-Letter.git
 ```
+
+Generate an OpenAI API key, and a Google Analytics property
+
+Create an `.env.local` that should look like the following:
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+OPENAI_API_KEY=***
+PROMPT=Create a cover letter using the following information:
+
+NEXT_PUBLIC_MEASUREMENT_ID=***
 ```
 
+Run the repo in your local
 ```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+yarn dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
