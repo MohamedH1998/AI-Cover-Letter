@@ -5,7 +5,7 @@ function classNames(...classes: string[]) {
 }
 
 const About = () => {
-const categories = ["Tell us about yourself", "Generate your Cover letter", 'Personalise your cover letter']
+const categories = ["Tell us about yourself", "Generate your cover letter", 'Personalise cover letter']
   return (
     <div className="px-20 py-16">
       <Tab.Group>
