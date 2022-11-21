@@ -23,7 +23,7 @@ const Form = ({ handleSubmitForm, loading }: Props) => {
       <input className="p-2 rounded-md" {...register("fullName")} placeholder="Full name" />
 <div className="flex-col md:flex-row flex space-between w-full">
       <input className="p-2 rounded-md mr-4 mb-4 md:my-0 w-full md:w-4/12" type="number" placeholder="Years of experience" {...register('yearsOfExperience')} />
-      <input className="p-2 rounded-md md:flex-grow" type="text" {...register('nameOfCompany')} placeholder="Name of Company" />
+      <input className="p-2 rounded-md md:flex-grow" type="text" {...register('nameOfCompany')} placeholder="Company you're applying for" />
       </div>
       <input className="p-2 rounded-md" type="text" {...register('nameOfRole')} placeholder="Role you’re applying for" />
       <textarea className="p-2 rounded-md" {...register("reasonForApplying")} placeholder="Why are you excited to work for said company?" />

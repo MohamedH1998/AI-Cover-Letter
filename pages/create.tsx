@@ -10,7 +10,7 @@ import Image from 'next/image'
 const Create: NextPage = () => {
   return (
     <div className="bg-black-metal h-full text-smart-white w-screen">
-              <div className="flex justify-between items-center py-6 px-10 w-screen">
+              <div className="flex justify-between items-center py-[2.4rem] px-10 w-screen">
       <span className="font-primary text-xl">COVERED</span>
 <Link href="/"><i className="text-2xl"><AiFillHome/></i></Link>
       </div>
