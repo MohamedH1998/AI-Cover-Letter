@@ -28,7 +28,7 @@ const Form = ({ handleSubmitForm, loading }: Props) => {
       <input className="p-2 rounded-md" type="text" {...register('nameOfRole')} placeholder="Role you’re applying for" />
       <textarea className="p-2 rounded-md" {...register("reasonForApplying")} placeholder="Why are you excited to work for said company?" />
       <textarea className="p-2 rounded-md" {...register("greatestStrength")} placeholder="Your greatest strength" />
-      <input disabled={loading} type="submit" className="py-2 px-4 md:px-8 md:py-3  my-4 bg-ice-cold-stare w-[180px] text-black" />
+      <input disabled={loading} type="submit" className="cursor-pointer py-2 px-4 md:px-8 md:py-3  my-4 bg-ice-cold-stare w-[180px]  text-black" />
     </form>
     </>
   );
